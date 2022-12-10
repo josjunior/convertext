@@ -51,15 +51,55 @@ main {
   color:white;
   outline-style: none;
 }
+.convert-section .text_area::selection {
+  background-color:rgb(175, 0, 0);
+}
+/* All divs */
 .convert-section div {
   width:100%;
   height:auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
 }
+/* copy reload div */
+.convert-section .copyreload_b_div {
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.convert-section .copy_div, .convert-section .reload_div {
+  width:120px;
+  height:50px;
+}
+
+.convert-section .copy_div {
+  margin-top:-5px;
+}
+.convert-section .copy_div .copy_button {
+  background-color:rgb(56, 1, 1);
+  width:90px;
+  height:40px;
+  line-height: 35px;
+  font-size:1rem;
+  border-radius:0;
+}
+.convert-section .reload_div {
+  margin-top:-5px;
+}
+.convert-section .reload_div .reload_button {
+  background-color:rgb(56, 1, 1);
+  width:90px;
+  height:40px;
+  line-height: 35px;
+  font-size:1rem;
+  border-radius:0;
+}
+
 .convert-section div button{
   width:120px;
   height:50px;
@@ -73,17 +113,16 @@ main {
   font-size:1.10rem;
   text-transform: uppercase;
 }
-.convert-section .reload_div {
-  margin-top:-5px;
-}
-.convert-section .reload_div .reload_button {
-  background-color:rgb(56, 1, 1);
-  width:90px;
-  height:40px;
-  line-height: 35px;
+
+/* copied txt */
+.convert-section .copied_txt {
+  display:none;
+  text-align: center;
   font-size:1rem;
-  border-radius:0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+
 .footer {
   margin:auto;
   width:60%;
@@ -122,34 +161,11 @@ main {
     margin-top:-5px;
   }
 }
-@media screen and (max-width:950px) {
-  .header h1 {
-    font-size:1.20rem;
-    margin-bottom:-10px;
-  }
-  .header h2 {
-    font-size:0.85rem;
-  }
-}
-@media screen and (max-width:850px) {
-  .header h1 {
-    font-size:1rem;
-    margin-bottom:-10px;
-  }
-  .header h2 {
-    font-size:0.65rem;
-  }
   /* footer */
-  .footer p{
-    font-size:0.65rem;
+  .footer {
+    display:none;
   }
-}
-
 @media screen and (max-width:500px) {
-  .header h1 {
-    font-size:1rem;
-    margin-bottom:-10px;
-  }
   .header h2 {
     text-align:justify;
   }
@@ -164,10 +180,19 @@ main {
     line-height: 30px;
     font-size:0.70rem;
 }
+  .copyreload_b_div {
+    margin-bottom:-20px;
+  }
   .convert-section .reload_div .reload_button {
     width:70px;
     height:20px;
     line-height:15px;
+    font-size:0.80rem;
+}
+  .convert-section .copy_div .copy_button {
+    width:70px;
+    height:20px;
+    line-height: 15px;
     font-size:0.80rem;
 }
   .footer {
@@ -181,12 +206,25 @@ main {
     line-height:25px;
     font-size:0.60rem;
 }
+.copyreload_b_div {
+  margin-bottom:-25px;
+}
   .convert-section .reload_div .reload_button {
     width:50px;
     height: 15px;
     line-height:10px;
     font-size:0.60rem;
 }
+  .convert-section .copy_div .copy_button {
+    width:50px;
+    height:15px;
+    line-height: 10px;
+    font-size:0.60rem;
+}
+  .convert-section .copy_div {
+    margin-right:-30px;
+}
+
 }
 @media screen and (max-width:300px) {
   .convert-section div button {
@@ -194,5 +232,8 @@ main {
     height:15px;
     line-height:15px;
     font-size:0.50rem;
+}
+  .convert-section .td_div {
+    display:none;
 }
 }
