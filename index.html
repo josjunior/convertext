@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>ConverText - Converter textos Maiscúlo Minúsculo e Mais</title>
-    <meta name="description" content="Conveter textos para Maiscúlo Minúsculo Capitalize Uppercase Lowercase Negrito Itálico Oblíquo Linha acima Linha abaixo Linha no meio">
-    <meta name="keywords" content="converter, textos, maiscúlo, minúsculo, Uppercase, Lowercase, negrito, Bold, itálico, oblíquo, palavras, letras, Linha">
+    <title>ConverText - Converter texto para Maiscúlo ou Minúsculo</title>
+    <meta name="description" content="Conveter textos para Maiscúlo Minúsculo Uppercase Lowercase Converta as letras do seu texto para maiscúlas ou minúsculas.">
+    <meta name="keywords" content="converter, textos, maiscúlo, minúsculo, Uppercase, Lowercase, palavras, letras, Linha">
     <meta name="author" content="José Júnior">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,36 +14,26 @@
   <body>
     <header class="header">
       <h1>ConverText</h1>
-      <h2>Bem vindo ao ConverText, Aqui você pode converter textos para maiscúlo, minúsculo, negrito, itálico e outras opções.</h2>
+      <h2>Bem vindo ao ConverText, Converta as letras do seu texto para maiscúlas ou minúsculas.</h2>
     </header>
     <main>
       <section class="convert-section">
-        <textarea type="text" class="text_area" id="text_area" style="width:95%; height:60vh;" placeholder="Escreva seu texto aqui"></textarea>
+        <div id="copied" class="copied_txt">
+          <p>Copiado!</p>
+        </div>
+        <textarea type="text" class="text_area" autofocus id="text_area" style="width:95%; height:60vh;" placeholder="Escreva seu texto aqui"></textarea>
         <div class="copyreload_b_div">
           <div class="copy_div">
             <button class="copy_button" onclick='copiedTxt()' id="copy">Copiar</button>
           </div>
           <div class="reload_div">
-            <button class="reload_button" onclick='window.location.reload()'>Resetar</button>
+            <button class="reload_button" onclick='window.location.reload()'>Apagar Tudo</button>
           </div>
-        </div>
-        <div id="copied" class="copied_txt">
-          <p>Copiado!</p>
         </div>
         <div class="tt_div">
           <button onclick='convUpper()'>Maiscúlo</button>
           <button onclick='convLower()'>Minúsculo</button>
-          <button onclick='convCapi()'>Capitalize</button>  
-        </div>
-        <div class="ts_div">
-          <button onclick="bold()">Negrito</button>
-          <button onclick="italic()">Itálico</button>
-          <button onclick="oblique()">Oblíquo</button>
-        </div>
-        <div class="td_div">
-          <button onclick="overLine()">Linha Acima</button>
-          <button onclick="underLine()">Linha Abaixo</button>
-          <button onclick="lineThrough()">No Meio</button>
+          <button onclick='convNormal()'>Original</button>  
         </div>
       </section>
     </main>

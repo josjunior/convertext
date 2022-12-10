@@ -63,6 +63,22 @@ main {
   justify-content: center;
   align-items: flex-start;
 }
+
+.convert-section div button{
+  width:120px;
+  height:50px;
+  line-height: 50px;
+  background-color:rgb(37, 0, 0);
+  color:white;
+  border-style:none;
+  border-radius:10px;
+  margin:3px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:1.10rem;
+  text-transform: uppercase;
+}
+
+
 /* copy reload div */
 .convert-section .copyreload_b_div {
   width: 100%;
@@ -93,26 +109,13 @@ main {
 }
 .convert-section .reload_div .reload_button {
   background-color:rgb(56, 1, 1);
-  width:90px;
+  width:110px;
   height:40px;
   line-height: 35px;
   font-size:1rem;
   border-radius:0;
 }
 
-.convert-section div button{
-  width:120px;
-  height:50px;
-  line-height: 50px;
-  background-color:rgb(37, 0, 0);
-  color:white;
-  border-style:none;
-  border-radius:10px;
-  margin:3px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size:1.10rem;
-  text-transform: uppercase;
-}
 
 /* copied txt */
 .convert-section .copied_txt {
@@ -120,6 +123,8 @@ main {
   text-align: center;
   font-size:1rem;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  color:rgb(212, 212, 212);
 }
 
 
@@ -184,7 +189,7 @@ main {
     margin-bottom:-20px;
   }
   .convert-section .reload_div .reload_button {
-    width:70px;
+    width:100px;
     height:20px;
     line-height:15px;
     font-size:0.80rem;
@@ -210,7 +215,7 @@ main {
   margin-bottom:-25px;
 }
   .convert-section .reload_div .reload_button {
-    width:50px;
+    width:80px;
     height: 15px;
     line-height:10px;
     font-size:0.60rem;
