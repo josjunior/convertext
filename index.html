@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <title>Converter para UpperCase</title>
+    <title>ConverText - Converter textos Maiscúlo Minúsculo e Mais</title>
+    <meta name="description" content="Conveter textos para Maiscúlo Minúsculo Capitalize Uppercase Lowercase Negrito Itálico Oblíquo Linha acima Linha abaixo Linha no meio">
+    <meta name="keywords" content="converter, textos, maiscúlo, minúsculo, Uppercase, Lowercase, negrito, Bold, itálico, oblíquo, palavras, letras, Linha">
+    <meta name="author" content="José Júnior">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="text/x-icon" href="images/favicon.png">
   </head>
   <body>
-    <form>
-    <textarea type="text" id="text_area" style="width:60%; height:auto;" placeholder="Escreva seu texto aqui"></textarea>
-    </form>
-    <button onclick='convUpper()'>Maiúscula</button>
-    <button onclick='convLower()'>Minuscula</button>
-    <button onclick='convCapi()'>Primeira Letra Maiúscula</button>
-    <button onclick='window.location.reload()'>Resetar</button>
+    <header class="header">
+      <h1>ConverText</h1>
+      <h2>Bem vindo ao ConverText, Aqui você pode converter textos para maiscúlo, minúsculo, capitalize. Mudar o estilo dos textos para negrito, itálico, oblíquo. Adicionar aos textos linha acima, linha abaixo, linha no meio.</h2>
+    </header>
+    <main>
+      <section class="convert-section">
+        <textarea type="text" class="text_area" id="text_area" style="width:95%; height:70vh;" placeholder="Escreva seu texto aqui"></textarea>
+        <div class="reload_div">
+          <button class="reload_button" onclick='window.location.reload()'>Resetar</button>
+        </div>
+        <div class="tt_div">
+          <button onclick='convUpper()'>Maiscúlo</button>
+          <button onclick='convLower()'>Minúsculo</button>
+          <button onclick='convCapi()'>Capitalize</button>  
+        </div>
+        <div class="ts_div">
+          <button onclick="bold()">Negrito</button>
+          <button onclick="italic()">Itálico</button>
+          <button onclick="oblique()">Oblíquo</button>
+        </div>
+        <div class="td_div">
+          <button onclick="overLine()">Linha Acima</button>
+          <button onclick="underLine()">Linha Abaixo</button>
+          <button onclick="lineThrough()">No Meio</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>&#169; Copyright 2022 - ConverText - Desenvolvido por <a href="https://josejuniordev.vercel.app" title="José Júnior">José Júnior</a></p>
+    </footer>
     <script src="scripts/script.js"></script>
   </body>
 </html>

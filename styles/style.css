@@ -1,5 +1,198 @@
 body {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(87, 2, 2);
   color:white;
-  text-decoration: ;
+}
+.header {
+  width:80%;
+  height:auto;
+  margin:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header h1 {
+  font-size:1.50rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:2px;
+  margin-bottom:-15px;
+}
+.header h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:1.20rem;
+  text-align:center;
+  margin-bottom:5px;
+}
+main {
+  width: 100%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.convert-section {
+  width:90%;
+  height:auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color:rgb(78, 1, 1);
+  border-radius:10px;
+  padding-bottom:7px;
+  padding-top:10px;
+}
+.convert-section .text_area {
+  font-size:0.90rem;
+  border-radius:10px;
+  background-color:rgb(56, 1, 1);
+  border-style:none;
+  color:white;
+  outline-style: none;
+}
+.convert-section div {
+  width:100%;
+  height:auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.convert-section div button{
+  width:120px;
+  height:50px;
+  line-height: 50px;
+  background-color:rgb(37, 0, 0);
+  color:white;
+  border-style:none;
+  border-radius:10px;
+  margin:3px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:1.10rem;
+  text-transform: uppercase;
+}
+.convert-section .reload_div {
+  margin-top:-5px;
+}
+.convert-section .reload_div .reload_button {
+  background-color:rgb(56, 1, 1);
+  width:90px;
+  height:40px;
+  line-height: 35px;
+  font-size:1rem;
+  border-radius:0;
+}
+.footer {
+  margin:auto;
+  width:60%;
+  height:auto;
+  text-align:center;
+}
+.footer p {
+  font-size:1rem;
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(221, 220, 220);
+}
+.footer p a:link {
+  text-decoration: none;
+  color:rgb(221, 220, 220);
+}
+.footer p a:visited {
+  color:rgb(221, 220, 220);
+}
+.footer p a:hover {
+  color:rgba(255, 255, 255, 0.699);
+}
+.footer p a:active {
+  color:rgb(221, 220, 220);
+}
+
+
+/* Top responsive */
+@media screen and (max-width:1100px) {
+  .header h2 {
+    font-size:1rem;
+  }
+  .convert-section {
+    margin-top:-2px;
+  }
+  .header h1 {
+    margin-top:-5px;
+  }
+}
+@media screen and (max-width:950px) {
+  .header h1 {
+    font-size:1.20rem;
+    margin-bottom:-10px;
+  }
+  .header h2 {
+    font-size:0.85rem;
+  }
+}
+@media screen and (max-width:850px) {
+  .header h1 {
+    font-size:1rem;
+    margin-bottom:-10px;
+  }
+  .header h2 {
+    font-size:0.65rem;
+  }
+  /* footer */
+  .footer p{
+    font-size:0.65rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .header h1 {
+    font-size:1rem;
+    margin-bottom:-10px;
+  }
+  .header h2 {
+    text-align:justify;
+  }
+}
+
+
+/* Buttons responsive */
+@media screen and (max-width:500px) {
+  .convert-section div button {
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    font-size:0.70rem;
+}
+  .convert-section .reload_div .reload_button {
+    width:70px;
+    height:20px;
+    line-height:15px;
+    font-size:0.80rem;
+}
+  .footer {
+    display:none;
+}
+}
+@media screen and (max-width:400px) {
+  .convert-section div button {
+    width:80px;
+    height:25px;
+    line-height:25px;
+    font-size:0.60rem;
+}
+  .convert-section .reload_div .reload_button {
+    width:50px;
+    height: 15px;
+    line-height:10px;
+    font-size:0.60rem;
+}
+}
+@media screen and (max-width:300px) {
+  .convert-section div button {
+    width:60px;
+    height:15px;
+    line-height:15px;
+    font-size:0.50rem;
+}
 }
