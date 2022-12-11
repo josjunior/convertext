@@ -24,16 +24,16 @@
         <textarea type="text" class="text_area" autofocus id="text_area" style="width:95%; height:60vh;" placeholder="Escreva seu texto aqui"></textarea>
         <div class="copyreload_b_div">
           <div class="copy_div">
-            <button class="copy_button" onclick='copiedTxt()' id="copy">Copiar</button>
+            <button type="button" class="copy_button" onclick='copiedTxt()' id="copy">Copiar</button>
           </div>
           <div class="reload_div">
-            <button class="reload_button" onclick='window.location.reload()'>Apagar Tudo</button>
+            <button type="button" class="reload_button" onclick='window.location.reload()'>Apagar Tudo</button>
           </div>
         </div>
         <div class="tt_div">
-          <button onclick='convUpper()'>Maiscúlo</button>
-          <button onclick='convLower()'>Minúsculo</button>
-          <button onclick='convNormal()'>Original</button>  
+          <button class="tt_div_btn" type="button" onclick='convUpper()'>Maiscúlo</button>
+          <button class="tt_div_btn" type="button" onclick='convLower()'>Minúsculo</button>
+          <button class="tt_div_btn" type="button" onclick='convNormal()'>Original</button>  
         </div>
       </section>
     </main>

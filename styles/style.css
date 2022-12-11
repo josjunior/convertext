@@ -76,8 +76,13 @@ main {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size:1.10rem;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 1s;
 }
+.tt_div_btn:hover {
+  background-color:rgb(107, 1, 1);
 
+}
 
 /* copy reload div */
 .convert-section .copyreload_b_div {
